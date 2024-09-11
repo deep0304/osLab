@@ -1,0 +1,16 @@
+#peogram for getting n numbers avg
+echo enter the nummbers to take the average
+echo arr:
+read -a arr
+num=${#arr[@]}
+echo the number of elements user had given: $num
+total=""
+# looping through the array
+for i in ${arr[@]}
+do
+	total=$((total + i))
+done
+avg=$((total / num))
+echo the average of the given numbers is : $avg
+
+
