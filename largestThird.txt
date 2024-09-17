@@ -1,0 +1,22 @@
+echo "Enter the 3 numbers to find the largest one out (use Command line Arguments):"
+echo "First Number : $1"
+echo "Second Number: $2"
+echo "Third Number : $3"
+
+first=$1
+sec=$2
+third=$3
+largest=$1
+
+if [[ $first -gt $sec && $first -gt $third ]]; then
+    largest=$1
+elif [[ $sec -gt $first && $sec -gt $third ]]; then
+    largest=$2
+else
+    largest=$3
+fi
+
+echo "The largest number is $largest"
+
+
+

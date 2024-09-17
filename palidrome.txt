@@ -1,0 +1,10 @@
+echo "enter the String to check Palindrom"
+read str
+#reverse the string 
+reverse_str=$(echo "$str"| rev)
+
+if [[ "$str" == "$reverse_str" ]]; then
+	echo "The given string: $str is a palindrome"
+else 
+	echo "The given String: $str is not a palindrome"
+fi
